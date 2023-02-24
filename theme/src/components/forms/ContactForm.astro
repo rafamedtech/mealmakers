@@ -3,18 +3,19 @@ import { Button, FormInput, FormSelect, FormTextarea } from '@littlesticks/odyss
 
 const selectOptions = [
   "Google Search",
-  "Social Media",
+  "Redes sociales",
   "Email",
+  "Un amigo"
 ]
 
 ---
 
 <form name="Contact Form" method="POST" action="/contact-thank-you">
-  <FormInput type="text" label="Name" name="Name" placeholder="John Doe" />
+  <FormInput type="text" label="Nombre" name="Name" placeholder="John Doe" />
   <FormInput type="email" label="Email" name="Email" placeholder="hello@example.com" />
-  <FormSelect label="How Did You Hear About Us?" options={selectOptions} />
-  <FormTextarea label="Message" name="Message" placeholder="Your message here..." />
-  <Button>Submit</Button>
+  <FormSelect label="Cómo te enteraste de nosotros?" options={selectOptions} />
+  <FormTextarea label="Mensaje" name="Message" placeholder="Tu mensaje aquí..." />
+  <Button>Enviar</Button>
 </form>
 
 <style>

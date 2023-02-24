@@ -1,25 +1,25 @@
 export const footerSocials = [
-  {
-    name: 'Twitter',
-    url: 'https://twitter.com/littlesticksdev',
-    icon: "mdi:twitter",
-  },
-  {
-    name: 'Youtube',
-    url: 'https://youtube.com/c/LittleSticks',
-    icon: "mdi:youtube",
-  },
-  {
-    name: 'Github',
-    url: 'https://github.com/littlesticks',
-    icon: "mdi:github",
-  },
-  {
-    name: 'Discord',
-    url: 'https://littlesticks.dev/discord',
-    icon: "ic:baseline-discord",
-  },
-]
+	{
+		name: 'Twitter',
+		url: 'https://twitter.com/littlesticksdev',
+		icon: 'mdi:facebook',
+	},
+	{
+		name: 'Youtube',
+		url: 'https://youtube.com/c/LittleSticks',
+		icon: 'mdi:instagram',
+	},
+	{
+		name: 'Github',
+		url: 'https://github.com/littlesticks',
+		icon: 'mdi:github',
+	},
+	{
+		name: 'Discord',
+		url: 'https://littlesticks.dev/discord',
+		icon: 'ic:baseline-discord',
+	},
+];
 
 export const footerLists = [
 	{
@@ -33,17 +33,17 @@ export const footerLists = [
 				title: 'Landing Page 2',
 				slug: '/landing-pages/landing-2',
 			},
-      // {
+			// {
 			// 	title: 'Landing Page 3',
 			// 	slug: '/landing-pages/landing-3',
 			// },
 		],
 	},
 	{
-		title: 'Company',
+		title: 'Enlaces',
 		items: [
 			{
-				title: 'About',
+				title: 'Nosotros',
 				slug: '/company/about',
 			},
 			{
@@ -51,30 +51,26 @@ export const footerLists = [
 				slug: '/blog',
 			},
 			{
-				title: 'Contact',
+				title: 'Contacto',
 				slug: '/company/contact',
 			},
 		],
 	},
 	{
-		title: 'Theme',
+		title: 'Navegacion',
 		items: [
 			{
-				title: 'Get Started',
-				slug: '/theme/get-started',
+				title: 'Nosotros',
+				slug: '/company/about',
 			},
 			{
-				title: 'Style Guide',
-				slug: '/theme/style-guide',
+				title: 'Blog',
+				slug: '/blog',
 			},
-      {
-        title: 'Theme Setup',
-        slug: '/theme/theme-setup',
-      },
-      {
-        title: 'Customizing Odyssey',
-        slug: '/theme/customizing-odyssey',
-      }
+			{
+				title: 'Contacto',
+				slug: '/company/contact',
+			},
 		],
 	},
 ];

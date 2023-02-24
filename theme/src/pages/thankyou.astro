@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Page.astro';
+import HeroSection from '../components/sections/heros/HeroSection.astro';
+import { Button } from "@littlesticks/odyssey-theme-components";
+
+const seo = {
+	title: 'About | Astro Odyssey Theme',
+	description: 'About Page',
+};
+---
+
+<Layout {seo}>
+	<HeroSection>
+		<div slot="text-container">
+			<h1>Gracias por unirte a nuestra lista!</h1>
+			<p>
+				Te contactaremos muy pronto para darte todos los detalles.
+			</p>
+      <Button slot="action-item" href="/">Ir al inicio</Button>
+		</div>
+    <picture slot="image-container">
+      <img
+        src="/assets/images/home/thankyou.svg"
+        alt="Astro Odyssee"
+        id="home-hero-image"
+      />
+    </picture>
+	</HeroSection>
+ 
+</Layout>

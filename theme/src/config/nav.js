@@ -1,6 +1,6 @@
 export const nav = [
 	{
-		title: 'Home',
+		title: 'Inicio',
 		slug: '/',
 	},
 	{
@@ -8,11 +8,11 @@ export const nav = [
 		slug: '/blog',
 	},
 	{
-		title: 'About',
+		title: 'Menú',
 		slug: '/company/about',
 	},
 	{
-		title: 'Contact',
-		slug: '/company/contact',
+		title: '¿Cómo funciona?',
+		slug: '/company/about',
 	},
 ];

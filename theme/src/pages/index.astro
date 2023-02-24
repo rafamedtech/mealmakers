@@ -1,13 +1,98 @@
 ---
-import { Container, FeatureCard } from '@littlesticks/odyssey-theme-components';
+import { Container, StickyTextImageSection, TextCardSection, CtaCardSection, Button } from '@littlesticks/odyssey-theme-components';
+import {Icon} from 'astro-icon'
 
 import Layout from '../layouts/Page.astro';
 import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+import NewsletterForm from '../components/forms/NewsletterForm.astro'
 ---
 
 <Layout>
 	<HomeHeroSection />
+
+	<!-- Features section -->
+	<StickyTextImageSection>
+		<div slot="text-container">
+		<h2>¿Por qué elegirnos?</h2>
+		<h3>Ahorra tiempo</h3>
+		<p>
+			Para muchas personas, cocinar puede ser una tarea que consume mucho tiempo y energía, lo que puede ser especialmente difícil para aquellos que tienen un estilo de vida ocupado. Nuestro servicio de mealpreps a domicilio puede ayudar a ahorrar tiempo al eliminar la necesidad de planear, comprar y preparar las comidas, permitiendo que te enfoques en otras actividades importantes.
+		</p>
+		<h3>Comidas personalizadas</h3>
+			<p>
+			Muchas personas tienen necesidades dietéticas específicas, ya sea por razones de salud, religiosas o personales. Nuestro servicio de mealpreps a domicilio puede ofrecer opciones personalizadas según las necesidades nutricionales y preferencias de cada cliente, eliminando la preocupación de tener que cocinar comidas especiales.
+		</p>
+		<h3>Comidas saludables</h3>
+			<p>
+			Para muchas personas, mantener una dieta saludable puede ser un reto, especialmente cuando se está ocupado o se tiene poco tiempo para cocinar. Un servicio de meal preps a domicilio puede ofrecer comidas saludables y balanceadas, utilizando ingredientes frescos y de calidad, ayudando a los clientes a mantener una dieta equilibrada y a mejorar su bienestar en general.
+		</p>
+		</div>
+		<picture slot="image-container">
+		<img
+			src="/assets/images/home/features.jpeg"
+			alt="Astro Odyssey"
+			loading="lazy"
+		/>
+		</picture>
+	</StickyTextImageSection>
+
 	<Container>
+		<section class="feature-card__section">
+			<h2 class="feature-card__section__title">¿Como funciona el servicio?</h2>
+			<!-- <p>Learn more about how to set up and use the Odyssey Theme.</p> -->
+			<div class="feature-card__grid">
+				<div>
+					<h2>Selecciona</h2>
+					<img src="/assets/images/home/selecciona.jpeg" alt="">
+					<p>
+						Elige entre nuestro menú disponible o personaliza tus comidas. Puedes seleccionar las comidas que desees para la siguiente semana y enviar tu lista de comidas el viernes previo.
+					</p>
+				</div>
+			<!-- <Button slot="column-1-cta">Learn More</Button> -->
+				<div>
+					<h2>Realiza el pago</h2>
+					<img src="/assets/images/home/pago.jpeg" alt="">
+					<p>
+						Después de seleccionar las comidas, puedes realizar el pago del servicio utilizando los métodos de pago disponibles, como tarjeta de crédito o transferencia bancaria.
+					</p>
+				</div>
+			<!-- <Button slot="column-2-cta" outlined>Learn More</Button> -->
+				<div>
+					<h2>Recibe</h2>
+					<img src="/assets/images/home/recibe.jpeg" alt="">
+					<p>
+						El servicio realiza dos entregas a la semana para garantizar la frescura de los alimentos. Recibe tu entrega en la comodidad de tu hogar y disfruta de comidas saludables durante toda la semana.
+					</p>
+				</div>
+			</div>
+		</section>
+
+	</Container>
+
+	<!-- <div id="list">
+
+	
+	<Container>
+		<TextCardSection>
+			<h1>Anótate a nuestra lista de espera</h1>
+			<p>
+				Se de los primeros en ser parte de nuestro servicio de mealpreps saludables.
+			</p>
+			<NewsletterForm />
+		</TextCardSection>
+
+	</Container>
+	</div> -->
+
+	<div id="list">
+	  <CtaCardSection background="var(--theme-surface-2)" color="var(--theme-on-surface-2)">
+    	<h2>Anótate a nuestra lista de espera</h2>
+   		<p>Se de los primeros en ser parte de nuestro servicio de mealpreps saludables.</p>
+		<NewsletterForm />
+  	  </CtaCardSection>
+  	</div>
+
+	<!-- <Container>
 		<section class="feature-card__section">
 			<h2>Landing Pages</h2>
 			<p>
@@ -72,18 +157,29 @@ import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro'
 				</FeatureCard>
 			</div>
 		</section>
-	</Container>
+	</Container> -->
 </Layout>
 
 <style>
 	.feature-card__section {
 		margin: var(--section-margin) auto;
 	}
+
+	.feature-card__section .feature-card__section__title {
+		margin-bottom: 2rem;
+	}
 	.feature-card__grid {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		gap: var(--theme-grid-gap);
 	}
+	.feature-card__grid img {
+		width: 100%;
+		/* height: 30rem; */
+		border-radius: 1.8rem;
+		margin-bottom: 2rem;
+	}
+
 	@media (max-width: 768px) {
 		.feature-card__grid {
 			grid-template-columns: 1fr;
