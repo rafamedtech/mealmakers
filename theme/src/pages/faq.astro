@@ -1,0 +1,70 @@
+---
+import { Container, } from '@littlesticks/odyssey-theme-components';
+import Layout from '../layouts/Page.astro';
+
+
+const seo = {
+	title: 'About | Astro Odyssey Theme',
+	description: 'About Page',
+};
+---
+
+<Layout {seo}>
+<Container>
+  <section class="feature-card__section">
+    <h2 class="feature-card__section__title">Preguntas frecuentes</h2>
+  <ol>
+    <li>
+      <h3>¿Cómo funcionan los mealpreps a domicilio?</h3>
+      <p>Respuesta: Preparamos y entregamos dos veces a la semana comidas saludables y balanceadas directamente a tu puerta. Puedes elegir las opciones de comida que deseas según tus necesidades y preferencias dietéticas.</p>
+    </li>
+    <li>
+      <h3>¿Puedo personalizar mis comidas?</h3>
+      <p>Respuesta: Sí, nuestras comidas se pueden personalizar para satisfacer tus necesidades nutricionales y preferencias dietéticas específicas. Puedes elegir entre opciones ya preparadas y agregar adicionales o personalizar tu comida.</p>
+    </li>
+    <li>
+      <h3>¿Cómo se preparan las comidas?</h3>
+      <p>Respuesta: Preparamos nuestras comidas con ingredientes frescos y de calidad en nuestras instalaciones de cocina. Luego, las empacamos y las entregamos en contenedores fáciles de transportar para que las disfrutes cuando quieras.</p>
+    </li>
+    <li>
+      <h3>¿Cómo puedo asegurarme de que las comidas sean saludables?</h3>
+      <p>Respuesta: Nuestras comidas están diseñadas para ser saludables y equilibradas, utilizando ingredientes frescos y de calidad y evitando los conservantes y aditivos artificiales. También podemos proporcionar información nutricional para cada comida.</p>
+    </li>
+    <li>
+      <h3>¿Cuánto tiempo duran las comidas?</h3>
+      <p>Respuesta: Nuestras comidas se pueden almacenar en el refrigerador durante varios días, lo que las hace ideales para aquellos con un estilo de vida ocupado. Las entregas se realizan dos veces a la semana para asegurar la frescura de los alimentos. Recomendamos calentar las comidas antes de consumirlas para obtener el mejor sabor y la mejor textura.</p>
+    </li>
+    <li>
+      <h3>¿Cuál es el costo de los mealpreps a domicilio?</h3>
+      <p>Respuesta: El costo puede variar según la cantidad y la frecuencia de las comidas que desees. Puedes consultar nuestros precios y opciones de menú en nuestro sitio web o ponerte en contacto con nosotros para obtener más información.</p>
+    </li>
+  </ol>
+</section></Container>
+</Layout>
+
+<style>
+	.feature-card__section {
+		margin: var(--section-margin) auto;
+	}
+
+	.feature-card__section .feature-card__section__title {
+		margin-bottom: 2rem;
+	}
+	.feature-card__grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--theme-grid-gap);
+	}
+	.feature-card__grid img {
+		width: 100%;
+		/* height: 30rem; */
+		border-radius: 1.8rem;
+		margin-bottom: 2rem;
+	}
+
+	@media (max-width: 768px) {
+		.feature-card__grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

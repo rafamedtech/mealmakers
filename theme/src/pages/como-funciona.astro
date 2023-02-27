@@ -1,0 +1,76 @@
+---
+import { Container, } from '@littlesticks/odyssey-theme-components';
+import Layout from '../layouts/Page.astro';
+import HeroSection from '../components/sections/heros/HeroSection.astro';
+
+const seo = {
+	title: '¿Cómo funciona el servicio?  | MealMakers',
+	description: '¿Cómo funciona el servicio?',
+};
+---
+
+<Layout {seo}>
+	
+	<Container>
+		<section class="feature-card__section">
+			<h2 class="feature-card__section__title">¿Cómo funciona el servicio?</h2>
+			<!-- <p>Learn more about how to set up and use the Odyssey Theme.</p> -->
+			<div class="feature-card__grid">
+				<div>
+					<h2>Selecciona</h2>
+					<img src="/assets/images/home/selecciona.jpeg" alt="">
+					<p>
+						Elige entre nuestro menú disponible o personaliza tus comidas. Puedes seleccionar las comidas que desees para la siguiente semana y enviar tu lista de comidas el viernes previo.
+					</p>
+				</div>
+			<!-- <Button slot="column-1-cta">Learn More</Button> -->
+				<div>
+					<h2>Realiza el pago</h2>
+					<img src="/assets/images/home/pago.jpeg" alt="">
+					<p>
+						Después de seleccionar las comidas, puedes realizar el pago del servicio utilizando los métodos de pago disponibles, como tarjeta de crédito o transferencia bancaria.
+					</p>
+				</div>
+			<!-- <Button slot="column-2-cta" outlined>Learn More</Button> -->
+				<div>
+					<h2>Recibe</h2>
+					<img src="/assets/images/home/recibe.jpeg" alt="">
+					<p>
+						El servicio realiza dos entregas a la semana para garantizar la frescura de los alimentos. Recibe tu entrega en la comodidad de tu hogar y disfruta de comidas saludables durante toda la semana.
+					</p>
+				</div>
+			</div>
+		</section>
+
+	</Container>
+	
+
+</Layout>
+
+
+<style>
+	.feature-card__section {
+		margin: var(--section-margin) auto;
+	}
+
+	.feature-card__section .feature-card__section__title {
+		margin-bottom: 2rem;
+	}
+	.feature-card__grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--theme-grid-gap);
+	}
+	.feature-card__grid img {
+		width: 100%;
+		/* height: 30rem; */
+		border-radius: 1.8rem;
+		margin-bottom: 2rem;
+	}
+
+	@media (max-width: 768px) {
+		.feature-card__grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

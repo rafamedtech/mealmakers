@@ -1,38 +1,38 @@
 export const footerSocials = [
 	{
-		name: 'Twitter',
-		url: 'https://twitter.com/littlesticksdev',
+		name: 'Facebook',
+		url: 'https://facebook.com/',
 		icon: 'mdi:facebook',
 	},
 	{
-		name: 'Youtube',
-		url: 'https://youtube.com/c/LittleSticks',
+		name: 'Instagram',
+		url: 'https://instagram.com/',
 		icon: 'mdi:instagram',
 	},
-	{
-		name: 'Github',
-		url: 'https://github.com/littlesticks',
-		icon: 'mdi:github',
-	},
-	{
-		name: 'Discord',
-		url: 'https://littlesticks.dev/discord',
-		icon: 'ic:baseline-discord',
-	},
+	// {
+	// 	name: 'Github',
+	// 	url: 'https://github.com/littlesticks',
+	// 	icon: 'mdi:github',
+	// },
+	// {
+	// 	name: 'Discord',
+	// 	url: 'https://littlesticks.dev/discord',
+	// 	icon: 'ic:baseline-discord',
+	// },
 ];
 
 export const footerLists = [
 	{
-		title: 'Landing Pages',
+		title: '',
 		items: [
-			{
-				title: 'Landing Page 1',
-				slug: '/landing-pages/landing-1',
-			},
-			{
-				title: 'Landing Page 2',
-				slug: '/landing-pages/landing-2',
-			},
+			// {
+			// 	title: 'Landing Page 1',
+			// 	slug: '/landing-pages/landing-1',
+			// },
+			// {
+			// 	title: 'Landing Page 2',
+			// 	slug: '/landing-pages/landing-2',
+			// },
 			// {
 			// 	title: 'Landing Page 3',
 			// 	slug: '/landing-pages/landing-3',
@@ -42,35 +42,39 @@ export const footerLists = [
 	{
 		title: 'Enlaces',
 		items: [
-			{
-				title: 'Nosotros',
-				slug: '/company/about',
-			},
+			// {
+			// 	title: 'Nosotros',
+			// 	slug: '/company/about',
+			// },
 			{
 				title: 'Blog',
 				slug: '/blog',
 			},
 			{
-				title: 'Contacto',
-				slug: '/company/contact',
+				title: 'Menú',
+				slug: '/menu',
 			},
 		],
 	},
 	{
-		title: 'Navegacion',
+		title: 'Mas enlaces',
 		items: [
 			{
-				title: 'Nosotros',
-				slug: '/company/about',
+				title: '¿Cómo funciona?',
+				slug: '/como-funciona',
 			},
 			{
-				title: 'Blog',
-				slug: '/blog',
+				title: 'Preguntas frecuentes',
+				slug: '/faq',
 			},
 			{
 				title: 'Contacto',
-				slug: '/company/contact',
+				slug: '/contacto',
 			},
+			// {
+			// 	title: 'Contacto',
+			// 	slug: '/company/contact',
+			// },
 		],
 	},
 ];

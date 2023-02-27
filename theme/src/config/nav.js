@@ -9,10 +9,10 @@ export const nav = [
 	},
 	{
 		title: 'Menú',
-		slug: '/company/about',
+		slug: '/menu',
 	},
 	{
 		title: '¿Cómo funciona?',
-		slug: '/company/about',
+		slug: '/como-funciona',
 	},
 ];
